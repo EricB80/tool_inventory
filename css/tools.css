@@ -1,0 +1,47 @@
+body{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+}
+#image_box{
+    width: 855px;
+    /*position:absolute;*/
+    overflow: hidden;
+    margin: auto;
+}
+#miss_list{
+    display: block;
+}
+#title_bar{
+    width: 100%;
+    text-align: center;
+}
+#wrapper{
+    overflow: hidden;
+    position: absolute;
+    width:100%;
+    height:100%;
+}
+.gone{
+    background-color: #99ffff;
+}
+.missing{
+    fill: '#C00000';
+}
+#miss_list{
+    float: right;
+}
+#right_button{
+    position: absolute;
+    right:0;
+    top:35%;
+}
+#left_button{
+    position: absolute;
+    left: 0;
+    top: 35%;
+}
+.slider_box{
+    position: absolute;
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Press 1 Tool Inventory</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/tools.css"/>
+        <script type="text/javascript" src="js/angular.js"></script>
+        <script type="text/javascript" src="js/controllers.js"></script>
+        <script type="text/javascript" src="js/directives.js"></script>
+    </head>
+    <body ng-app="toolApp" ng-controller="MainCtrl">
+        <div id='title_bar'>
+            <h1>Press #1 - Tool board 1</h1>
+        </div>
+        <div id="right_button"><img src="images/right.png" alt="right"></div>
+        <div id="image_box">
+            <div tool-box></div>
+        </div>
+        <div id='miss_list'>
+            Missing Tools:
+            <ul id="missing_tools">
+                <li ng-repeat="m in missing_tools">{{m}}</li>
+            </ul>
+        </div>
+        <div id="left_button"><img src="images/left.png" alt="left"></div>
+
+        <!--<script type="text/javascript" src="js/services.js"></script>-->
+
+        <div id="tester">
+        </div>
+    </body>
+</html>
